@@ -11,6 +11,10 @@
     padding:5px;
 }
 
+.vote-controls {
+    width: 8.333%;
+}
+
 .btnCommments{
     border-radius: 2px;
     color: #878A8C;
