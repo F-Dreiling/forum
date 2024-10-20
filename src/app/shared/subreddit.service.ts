@@ -11,11 +11,11 @@ export class SubredditService {
   constructor(private http: HttpClient) { }
 
   getAllSubreddits(): Observable<Array<SubredditModel>> {
-    return this.http.get<Array<SubredditModel>>('http://localhost:8080/api/subreddit');
+    return this.http.get<Array<SubredditModel>>('https://dr-forum.azurewebsites.net/api/subreddit');
   }
 
   createSubreddit(subredditModel: SubredditModel): Observable<SubredditModel> {
-    return this.http.post<SubredditModel>('http://localhost:8080/api/subreddit', subredditModel);
+    return this.http.post<SubredditModel>('https://dr-forum.azurewebsites.net/api/subreddit', subredditModel);
   }
   
 }
